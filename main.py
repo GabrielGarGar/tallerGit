@@ -1,8 +1,6 @@
-from Estudiantes.registro import cargarEstudiantes
+from Estudiantes.registro import *
 
 archivoEstudiantes = 'estudiantes.csv'
 estudiantes = cargarEstudiantes(archivoEstudiantes)
 
-print("Estudiantes válidos:")
-for estudiante in estudiantes:
-    print(estudiante)
+mostrar_estudiantes_ordenados(estudiantes)
